@@ -20,8 +20,13 @@ describe('Student', () => {
     expect(student.energyLevel).toEqual(10);
   })
   test('should decrease energy over time',() => {
-    student.setEnergy();
+    student.life();
     jest.advanceTimersByTime(3001);
     expect(student.energyLevel).toEqual(7);
+  })
+  test('timer should stop if any levels reach zero', () => {
+    student.life();
+    jest.advanceTimersByTime(12000);
+    expect(student.energyLevel).toEqual(-2)
   })
 });
