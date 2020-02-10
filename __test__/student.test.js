@@ -22,6 +22,6 @@ describe('Student', () => {
   test('should decrease energy over time',() => {
     student.setEnergy();
     jest.advanceTimersByTime(3001);
-    expect(student.energyLevel).toEqual(10);
+    expect(student.energyLevel).toEqual(7);
   })
 });
