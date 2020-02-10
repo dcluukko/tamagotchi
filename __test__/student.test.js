@@ -27,6 +27,6 @@ describe('Student', () => {
   test('timer should stop if any levels reach zero', () => {
     student.life();
     jest.advanceTimersByTime(12000);
-    expect(student.energyLevel).toEqual(-2)
+    expect(student.energyLevel).toEqual(0)
   })
 });
