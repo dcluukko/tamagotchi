@@ -32,7 +32,7 @@ describe('Student', () => {
   })
   test('should level up to level 1 after 20 seconds', () => {
     student.leveling();
-    jest.advanceTimersByTime(20000.1)
+    jest.advanceTimersByTime(20001)
     expect(student.energyLevel).toEqual(20)
   })
 });
