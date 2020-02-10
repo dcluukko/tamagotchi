@@ -13,7 +13,7 @@ describe('Student', () => {
         student = new Student(input);
     })
     test('should set energy to 10', () => {
-       // student.coffeeBreak();
+       student.coffeeBreak();
         expect(student.energy).toEqual(10);
     })
 });
