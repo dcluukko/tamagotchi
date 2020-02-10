@@ -6,7 +6,7 @@
 
 ## Description
 
-An interactive Tamagotchi-like app where the user sends their Code-agotchi to coding school. The user has to maintain the Code-agotchi's properties of energy, learning, and networking in order for the Code-gotchi to level up and graduate code school. If the properties are not maintained, the Code-agotchi will be asked to leave code school. And die.
+An interactive Tamagotchi-like app where the user sends their Code-agotchi to coding school. The user has to maintain the Code-agotchi's meeters of energy, learning, and networking in order for the Code-gotchi to level up and graduate code school. If the properties are not maintained, the Code-agotchi will be asked to leave code school. And die.
 
 
 ### Specs
@@ -14,10 +14,11 @@ An interactive Tamagotchi-like app where the user sends their Code-agotchi to co
 | :-------------     | :------------- | :------------- |
 | User will create a Code-agotchi | User submits "Send Code-agotchi to Code School" | A Code-agotchi with the option to input the pet's name will be returned |
 | User creates pet name | text | A Code-agotchi with a name is returned |
-| User feeds code-agotchi coffee and energy Clock is restarted | user clicks coffee break | Energy Clock is restarted |
-| User makes code-agotchi study and Learning Clock is restarted | user clicks study | Learn Clock is restarted |
-| User sends Code-gotchi to meetup | user clicks "Ya gotta network to get work" | Networking clock is restarted |
-| User neglects code-gotchi| User does not restart energy, learn, or network clock by not clicking "coffee break", "study", or "Ya gotta netowork to get work" within the set time intervals | code-gotchi gets thrown out of Epicodus
+| User feeds code-agotchi coffee and energy meter is restarted | user clicks "Coffee Break" | Energy meter is restarted |
+| User makes code-agotchi study and Learning meter is restarted | user clicks "Study" | Learn meter is restarted |
+| User sends Code-gotchi to meetup | user clicks "Ya gotta network to get work" | Networking meter is restarted |
+| User neglects code-gotchi| User does not restart energy, learn, or network meter by not clicking "coffee break", "study", or "Ya gotta netowork to get work" within the set time intervals | code-gotchi gets thrown out of Epicodus |
+| User maintains Code-agotchi's meeters | User clicks "coffee break", "study", and "Ya Gotta Network to Get Work" within the set time intervals | Code-agotchi continues to grow and level up |
 
 
 
