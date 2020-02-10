@@ -4,6 +4,7 @@ export class Student {
     this.energyLevel = 10;
     this.networkLevel = 10;
     this.name = name; 
+    this.toolBox = [];
 }
 
 life() {
@@ -17,8 +18,17 @@ life() {
     }
   }, 1000);
 }
+leveling() {
+  let levelOne = setTimeout(() => {
+  this.levelOne();
+  }, 2000)
+}
 
-
+levelOne()  {
+  this.studyLevel = 20;
+  this.energyLevel = 20;
+  this.networkLevel = 20;
+}
   coffeeBreak() {
     this.energyLevel = 10
   }

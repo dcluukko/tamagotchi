@@ -17,6 +17,7 @@ describe('Student', () => {
   })
   test('should set energy to 10', () => {
     student.coffeeBreak();
+    jest.advanceTimersByTime(1000);
     expect(student.energyLevel).toEqual(10);
   })
   test('should decrease energy over time',() => {
@@ -28,5 +29,10 @@ describe('Student', () => {
     student.life();
     jest.advanceTimersByTime(12000);
     expect(student.energyLevel).toEqual(0)
+  })
+  test('should level up to level 1 after 20 seconds', () => {
+    student.leveling();
+    jest.advanceTimersByTime(20000.1)
+    expect(student.energyLevel).toEqual(20)
   })
 });
