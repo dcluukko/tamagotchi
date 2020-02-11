@@ -4,3 +4,12 @@ body {
 .gamescreen{
   display: none;
 }
+#tired{
+  display: none;
+}
+#dumb{
+  display: none;
+}
+#lonely{
+  display: none;
+}
