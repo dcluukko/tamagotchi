@@ -1,5 +1,4 @@
 import { Student } from '../src/student.js';
-import { exportAllDeclaration } from '@babel/types';
 
 describe('Student', () => {
   let input;

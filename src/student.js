@@ -16,19 +16,20 @@ export class Student {
       this.networkLevel--;
       if (this.studyLevel === 0 || this.energyLevel === 0 || this.networkLevel === 0) {
         clearInterval(clock);
-        console.log('isliving');
+        console.log('isdead');
+        clearInterval(this.levelInterval)
       }
     }, 1000);
   }
 
   leveling() {
-    setTimeout(() => {
-    this.whatLevel();
-    console.log('level', this.level)
-    }, 2000);
+    this.levelInterval = setInterval(() => {
+      this.levelUp();
+      console.log('level', this.level)
+    }, 20000);
   }
 
-  whatLevel()  {
+  levelUp()  {
     this.level = this.level += 1; 
     console.log(this.level)
     this.max = this.level * 10;
@@ -41,6 +42,7 @@ export class Student {
 
   coffeeBreak() {
     this.energyLevel = this.max;
+    console.log('energy=',this.max)
   }
   study() {
     this.studyLevel = this.max;
