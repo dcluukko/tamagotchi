@@ -20,9 +20,26 @@
     <p>Level <span id="level"></span></p>
     <p id="studentName">name</p>
     <img src="" alt="gifs">
-    <button id="coffee" >coffee break</button>
-    <button id="study" >study</button>
-    <button id="network" >Network</button>
+    <div class="row">
+      <div class="col-md-4" >
+        <button id="coffee">coffee break</button>
+        <div id="coffeeBar" class="progress">
+          <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="col-md-4" >
+        <button id="study">study</button>
+        <div id="studyBar" class="progress">
+          <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="col-md-4" >
+        <button id="network">network</button>
+        <div id="networkBar" class="progress">
+          <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
   

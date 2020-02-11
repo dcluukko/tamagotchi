@@ -19,6 +19,7 @@ An interactive Tamagotchi-like app where the user sends their Code-agotchi to co
 | User sends Code-gotchi to meetup | user clicks "Ya gotta network to get work" | Networking meter is restarted |
 | User neglects code-gotchi| User does not restart energy, learn, or network meter by not clicking "coffee break", "study", or "Ya gotta netowork to get work" within the set time intervals | code-gotchi gets thrown out of Epicodus |
 | User maintains Code-agotchi's meeters | User clicks "coffee break", "study", and "Ya Gotta Network to Get Work" within the set time intervals | Code-agotchi continues to grow and level up |
+| Time sensitivity should increase as you level up | Code-agotchi continues to grow and level up |
 
 
 
