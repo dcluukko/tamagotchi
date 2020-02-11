@@ -17,7 +17,7 @@ export class Student {
       this.networkLevel--;
       if (this.studyLevel === 0 || this.energyLevel === 0 || this.networkLevel === 0) {
         clearInterval(clock);
-        console.log('isdead');
+        alert('u dead, u out');
         clearInterval(this.levelInterval);
       } else if (this.energyLevel === this.max /2 || this.studyLevel === this.max/2 || this.networkLevel === this.max/2) {
         alert("U ON ACADEMIC PROBATION");
@@ -25,7 +25,7 @@ export class Student {
     }, this.level * 1000);
     // }, 1000);
   }
-  
+
   leveling() {
     this.levelInterval = setInterval(() => {
       this.levelUp();
