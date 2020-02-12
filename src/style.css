@@ -1,5 +1,18 @@
+.jumbotron {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://cdna.artstation.com/p/assets/images/images/001/961/520/large/kvachi-art-tamagochi2.jpg?1455205469");
+  color: white;
+  font-family: monospace;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rainbow-text {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  font-size: 50px;
+}
 body {
-  background-color: pink;
+  background-color: rgb(170, 211, 223);
 }
 .gamescreen{
   display: none;
@@ -13,3 +26,26 @@ body {
 #lonely{
   display: none;
 }
+#dead{
+  display: none;
+}
+#grad{
+  display: none;
+}
+.container {
+  text-align: center;
+}
+img {
+  max-height: 500px;
+  min-height: 500px;
+  border-radius: 35%;
+  border: 30px lightblue;
+  margin: 50px;
+  
+}
+
+/* #alignment { */
+  /* text-align: center; */
+  /* margin-right: 40%;
+  margin-left: 40%;
+/* } */
