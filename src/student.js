@@ -17,12 +17,9 @@ export class Student {
       this.networkLevel--;
       if (this.studyLevel === 0 || this.energyLevel === 0 || this.networkLevel === 0) {
         clearInterval(clock);
-        alert('u dead, u out');
         clearInterval(this.levelInterval);
-      } else if (this.energyLevel === this.max /2 || this.studyLevel === this.max/2 || this.networkLevel === this.max/2) {
-        alert("U ON ACADEMIC PROBATION");
       }
-    }, this.level * 1000);
+    }, this.level * 2000);
     // }, 1000);
   }
 
@@ -30,17 +27,17 @@ export class Student {
     this.levelInterval = setInterval(() => {
       this.levelUp();
       console.log('level', this.level);
-      if (this.level === 8) {
-        alert("YOU MADE IT!!!! Now go find a job >:D");
+      if (this.level === 7) {
+        clearInterval(this.levelInterval);
       }
-    }, 20000);
+    }, 15000);
   }
 
   levelUp()  {
     this.level = this.level += 1; 
     this.easylevel = this.easylevel -= 1; 
     console.log(this.easylevel);
-    this.max = this.easylevel * 10;
+    this.max = this.easylevel;
     this.studyLevel = this.max;
     this.energyLevel = this.max;
     this.networkLevel = this.max;
